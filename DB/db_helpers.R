@@ -3,11 +3,11 @@
 .db_admin = new.env()
 .db_admin$conlist = list(
   drv = RPostgres::Postgres(),
-  dbname = "dbname",
-  host = "host_name",
+  dbname = "budgetron9000",
+  host = "127.0.0.1",
   port = 5432, 
-  user = "admin_user", 
-  password = "wrong_password"
+  user = "budgetron9000_user", 
+  password = "henpeebin"
 )
 .db_admin$get_con = function() {
   con = do.call(DBI::dbConnect, .db_admin$conlist)
@@ -15,19 +15,19 @@
 }
 
 # DB READ con
-.db_read = new.env()
-.db_read$conlist = list(
-  drv = RPostgres::Postgres(),
-  dbname = "dbname",
-  host = "host_name",
-  port = 5432, 
-  user = "db_read", 
-  password = "wrong_password"
-)
-.db_read$get_con = function() {
-  con = do.call(DBI::dbConnect, .db_read$conlist)
-  return(con)
-}
+# .db_read = new.env()
+# .db_read$conlist = list(
+#   drv = RPostgres::Postgres(),
+#   dbname = "dbname",
+#   host = "host_name",
+#   port = 5432, 
+#   user = "db_read", 
+#   password = "wrong_password"
+# )
+# .db_read$get_con = function() {
+#   con = do.call(DBI::dbConnect, .db_read$conlist)
+#   return(con)
+# }
 
 ########## Database helper functions ##########
 # read_xxx = function(con, table_name) {
