@@ -3,18 +3,18 @@ USE psql command below to create user and database
 psql -U allen
 psql -U <postgres> -- this would work if your database was set up the normal way
 */
-CREATE USER budgetron9000_user WITH PASSWORD 'henpeebin';
-CREATE DATABASE budgetron9000 WITH OWNER budgetron9000_user;
+CREATE USER b9k_user WITH PASSWORD 'henpeebin';
+CREATE DATABASE b9k WITH OWNER b9k_user;
 
 /*
 USE psql command below to connect
-psql -U budgetron9000_user -d budgetron9000 -h 127.0.0.1
+psql -U b9k_user -d b9k -h 127.0.0.1
 */
 
-CREATE SCHEMA IF NOT EXISTS b9000;
+CREATE SCHEMA IF NOT EXISTS b9k;
 
 
-CREATE TABLE IF NOT EXISTS b9000.accounts (
+CREATE TABLE IF NOT EXISTS b9k.accounts (
   a_id SERIAL PRIMARY KEY,
   name VARCHAR,
   type VARCHAR,
@@ -28,7 +28,7 @@ CREATE TABLE IF NOT EXISTS b9000.accounts (
   amount_field VARCHAR
 );
 
-CREATE TABLE b9000.categories (
+CREATE TABLE b9k.categories (
   c_id SERIAL PRIMARY KEY,
   c_name VARCHAR,
   c_subcategries VARCHAR,
@@ -36,7 +36,7 @@ CREATE TABLE b9000.categories (
 );
 
 
-CREATE TABLE b9000.transactions (
+CREATE TABLE b9k.transactions (
   t_id SERIAL PRIMARY KEY,
   a_id INT,
   t_date DATE,
@@ -48,5 +48,5 @@ CREATE TABLE b9000.transactions (
   t_amount REAL,
   t_exclude BOOLEAN
 );
-ALTER TABLE b9000.transactions ADD FOREIGN KEY (a_id) REFERENCES b9000.accounts (a_id);
-ALTER TABLE b9000.transactions ADD FOREIGN KEY (c_id) REFERENCES b9000.categories (c_id);
+ALTER TABLE b9k.transactions ADD FOREIGN KEY (a_id) REFERENCES b9k.accounts (a_id);
+ALTER TABLE b9k.transactions ADD FOREIGN KEY (c_id) REFERENCES b9k.categories (c_id);
