@@ -17,7 +17,7 @@ budget_ui = function() {
 graph_ui = function() {
   out = fluidPage(
     box(title="Plot Options", status="info", solidHeader=T, width=12, collapsible=T, collapsed=T,
-      selectInput("graph_type", label="Graph Type", choices=c("Transactions", "Monthly")),
+      selectInput("graph_type", label="Graph Type", choices=c("Transactions", "Monthly", "Savings")),
       dateRangeInput(
         "dr_filter", label = "Date Range", 
         start=format(Sys.Date(), "%Y-01-01"), 
@@ -29,6 +29,7 @@ graph_ui = function() {
     ),
     plotOutput("budget_plot"), 
     plotlyOutput("lollipop_plot"), 
+    plotOutput("savings_plot")
   )
   return(out)
 }

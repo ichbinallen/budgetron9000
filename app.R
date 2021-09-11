@@ -118,6 +118,7 @@ server = function(input, output, session) {
       end=input$dr_filter[2],
       categories=input$cat_filter)
   })
+  
   output$lollipop_plot = renderPlotly({
     req(transactions())
     req(input$dr_filter)
@@ -131,6 +132,20 @@ server = function(input, output, session) {
       categories=input$cat_filter)
     ggplotly(lp, tooltip=c("label", "label2", "label3", "label4"))
   })
+  
+  output$savings_plot = renderPlot({
+    req(transactions())
+    req(input$dr_filter)
+    req(input$cat_filter)
+    req(input$graph_type=="Savings")
+    
+   savings_graph(
+      transactions(),  
+      start=input$dr_filter[1], 
+      end=input$dr_filter[2]
+   )
+  })
+  
   
 }
 

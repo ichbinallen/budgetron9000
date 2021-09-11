@@ -1,8 +1,10 @@
 ########### load packages ##########
+library(dplyr)
 library(ggplot2)
 library(openxlsx)
-library(dplyr)
+library(reshape2)
 library(scales)
+library(patchwork)
 
 ########## USER ACCESS ##########
 
@@ -90,6 +92,63 @@ lollipop_plot = function(
     labs(x=NULL, y="Spending", title="Transactions By Category") +
     theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
   return(pop_plot)
+}
+
+savings_graph = function(data, start_date, end_date) {
+  data = data %>% filter(
+    transaction_date >= start_date &
+    end_date >= end_date
+  )
+  monthly_wide = data %>% 
+    mutate(
+      type = ifelse(category=="Income", "earnings", "spending"),
+      year_month = strftime(transaction_date, "%Y-%m"),
+    ) %>% 
+    group_by(year_month, type) %>%
+    summarise(total = sum(charge_amount, na.rm=T)) %>%
+    mutate(
+      month_date = as.Date(paste0(year_month, "-01")),
+      total = ifelse(type=="spending", -total, total)
+    ) %>%
+    dcast(month_date ~ type, value.var="total") %>%
+    mutate(savings_rate = 1 - spending / earnings)
+   
+  savings_rate_plot = ggplot(monthly_wide, aes(x=month_date, y=savings_rate)) +
+    geom_point() + 
+    geom_line() +
+    scale_x_date(date_breaks="1 month", date_labels="%m/%Y") +
+    scale_y_continuous(labels=percent) +
+    labs(x=NULL, y="savings rate", title="Monthly Savings Rate") +
+    theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
+  
+  monthly = monthly_wide %>%
+    mutate(
+      savings = earnings + spending,
+    ) %>% melt(
+      id.vars="month_date",
+      measure_vars=c("earnings", "spending", "savings"),
+      value.name="amount",
+      variable.name="type"
+    )
+  
+  graph_data = monthly %>% 
+    filter(type %in% c("earnings", "spending")) %>%
+    droplevels
+  
+  savings_earnings_plot = ggplot() +
+    geom_point(data=graph_data, aes(x=month_date, y=amount, color=type)) +
+    geom_line(data=graph_data, aes(x=month_date, y=amount, color=type)) +
+    geom_ribbon(data=monthly_wide, aes(
+      x=month_date, ymin=-spending, ymax=earnings),
+      fill="skyblue", alpha=0.2) +
+    scale_x_date(date_breaks="1 month", date_labels="%m/%Y") +
+    scale_y_continuous(labels=dollar, limits=c(0,NA)) +
+    labs(x=NULL, y=NULL, title="Earnings and Spending") +
+    theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
+  
+  return(savings_rate_plot)
+  
+  return(savings_earnings_plot /  savings_rate_plot)
 }
 
 ########### Other functions ##########
