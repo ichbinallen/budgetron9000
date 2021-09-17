@@ -16,7 +16,7 @@ budget_ui = function() {
 
 graph_ui = function() {
   out = fluidPage(
-    box(title="Plot Options", status="info", solidHeader=T, width=12, collapsible=T, collapsed=T,
+    box(title="Plot Options", status="info", solidHeader=T, width=12, collapsible=T, collapsed=F,
       selectInput("graph_type", label="Graph Type", choices=c("Transactions", "Monthly", "Savings")),
       dateRangeInput(
         "dr_filter", label = "Date Range", 
@@ -25,7 +25,8 @@ graph_ui = function() {
       ),
       checkboxGroupInput(
         "cat_filter", label = "Categories", choices = letters[1:3], inline=TRUE
-      )
+      ),
+      checkboxInput("all_cats", "Select All Categories", value=F),
     ),
     plotOutput("budget_plot"), 
     plotlyOutput("lollipop_plot"), 

@@ -106,6 +106,16 @@ server = function(input, output, session) {
   #--------------------------------------------------------------------------------
   # Graph Tab 
   #--------------------------------------------------------------------------------
+  observe({
+    updateCheckboxGroupInput(
+      session,
+      'cat_filter',
+      choices=levels(transactions()$category), 
+      selected=if(input$all_cats) {levels(transactions()$category)},
+      inline=TRUE
+    )
+  })
+  
   output$budget_plot = renderPlot({
     req(transactions())
     req(input$dr_filter)
