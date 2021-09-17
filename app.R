@@ -94,6 +94,12 @@ server = function(input, output, session) {
     )
     transactions
   })
+  
+  budget <- reactive({
+    req(input$budget_upload)
+    budget = read.csv(input$budget_upload$datapath)
+    budget
+  })
   #--------------------------------------------------------------------------------
   # Transaction Tab 
   #--------------------------------------------------------------------------------
@@ -102,6 +108,7 @@ server = function(input, output, session) {
   #--------------------------------------------------------------------------------
   # Budget Tab 
   #--------------------------------------------------------------------------------
+  output$budget_dt = DT::renderDT(budget())
   
   #--------------------------------------------------------------------------------
   # Graph Tab 

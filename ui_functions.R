@@ -8,8 +8,8 @@ transaction_ui = function() {
 
 budget_ui = function() {
   out = fluidPage(
-    p("Budget user interface"),
-    p(id = "coming_soon", "Budgeting Feature coming '''soon'''")
+    fileInput("budget_upload", label="Upload Budget From CSV"),
+    DT::DTOutput("budget_dt")
   )
   return(out)
 }
