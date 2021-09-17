@@ -32,24 +32,44 @@ monthly_spending_plot = function(
     group_by(category, year, month) %>%
     summarize(month_spending = sum(charge_amount, na.rm=T))
   
+  beg_date = min(transactions$transaction_date)
+  end_date = max(transactions$transaction_date)
+  beg_month = paste0(strftime(beg_date, "%Y-%m"), "-01")
+  end_month = paste0(strftime(end_date, "%Y-%m"), "-01")
+  month_seq = seq.Date(
+    from=as.Date(beg_month),
+    to=as.Date(end_month),
+    by="month"
+  )
+  
   # Fill in zero for months with no spending in a category
   missing_months = as.data.frame(expand.grid(
     unique(monthly_spending$category),
-    unique(monthly_spending$year),
-    unique(monthly_spending$month),
+    month_seq,
     stringsAsFactors = F
-  ))
-  names(missing_months) = c("category", "year", "month")
+  )) 
+  names(missing_months) = c("category", "year_month")
+  missing_months = missing_months %>%
+    mutate(
+      year=strftime(year_month, "%Y"),
+      month=strftime(year_month, "%m")
+    ) %>%
+    select(-year_month)
   
   monthly_spending = monthly_spending %>%
     full_join(missing_months) %>%
     mutate(month_spending = ifelse(is.na(month_spending), 0, month_spending)) %>%
+    ungroup() %>%
+    group_by(category) %>%
     mutate(
       avg_spending = mean(month_spending),
       date = as.Date(paste0(year, "-", month, "-01")),
       month_spending = month_spending * -1,
       avg_spending = avg_spending * -1) %>%
-    arrange(category, year, month)
+    arrange(category, year, month) %>%
+    ungroup %>%
+    as.data.frame 
+  
   
   gg = ggplot(
     monthly_spending, aes(x=date, y=month_spending, group=category, color=category)
@@ -146,8 +166,6 @@ savings_graph = function(data, start_date, end_date) {
     labs(x=NULL, y=NULL, title="Earnings and Spending") +
     theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
   
-  return(savings_rate_plot)
-  
   return(savings_earnings_plot /  savings_rate_plot)
 }
 
@@ -157,5 +175,5 @@ savings_graph = function(data, start_date, end_date) {
 # spending = read.csv("./FormatedStatements/Spending.csv") %>%
 #   mutate(transaction_date = as.Date(transaction_date))
 # head(spending)
-# monthly_spending_plot(spending, "2020-05-01", "2020-08-01")
+# monthly_spending_plot(spending, "2020-01-01", "2021-08-01", c("Shelter", "Groceries"))
 # levels(spending$category)
