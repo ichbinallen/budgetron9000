@@ -115,6 +115,7 @@ lollipop_plot = function(
 }
 
 savings_graph = function(data, start_date, end_date) {
+  browser()
   data = data %>% filter(
     transaction_date >= start_date &
     end_date >= end_date

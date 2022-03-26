@@ -34,7 +34,7 @@ ui = dashboardPage(
     sidebarMenu(id="menu",
                 menuItem(text="Transactions", tabName="transactions", icon=icon("credit-card")),
                 menuItem(text="Set Budget", tabName="budget", icon=icon("balance-scale")),
-                menuItem(text="Graphs", tabName="graphs", icon=icon("area-chart"))
+                menuItem(text="Graphs", tabName="graphs", icon=icon("chart-area"))
     )
   ),
   dashboardBody(
@@ -44,7 +44,8 @@ ui = dashboardPage(
       #--------------------------------------------------------------------------------
       tabItem(
         tabName="transactions",
-        transaction_ui()
+        transaction_ui(),
+        actionButton("press_me", label="test"),
       ),
       
       #--------------------------------------------------------------------------------
@@ -75,6 +76,13 @@ server = function(input, output, session) {
   #--------------------------------------------------------------------------------
   # Reactive Values
   #--------------------------------------------------------------------------------
+  observeEvent(input$press_me, {
+    print(head(transactions()))
+    print(input$transaction_upload)
+    print(input$dr_filter)
+      
+  })
+  
   transactions <- reactive({
     req(input$transaction_upload)
     
@@ -156,11 +164,11 @@ server = function(input, output, session) {
     req(input$cat_filter)
     req(input$graph_type=="Savings")
     
-   savings_graph(
+    savings_graph(
       transactions(),  
       start=input$dr_filter[1], 
       end=input$dr_filter[2]
-   )
+    )
   })
   
   
