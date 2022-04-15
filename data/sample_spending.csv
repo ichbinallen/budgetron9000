@@ -1,0 +1,421 @@
+transaction_date,account,description,category,subcategory,charge_amount
+2020-01-01,checking,working,Income,payroll,6666.67
+2020-01-01,checking,Apartment Rent,Shelter,Rent,-1200.0
+2020-01-15,credit card,Kroger,Groceries,,-73.09
+2020-01-21,credit card,Aldi,Groceries,,-82.24
+2020-01-26,credit card,Kroger,Groceries,,-56.0
+2020-01-27,credit card,Target,Groceries,,-74.92
+2020-02-01,checking,working,Income,payroll,6666.67
+2020-02-01,checking,Apartment Rent,Shelter,Rent,-1200.0
+2020-02-01,credit card,Kroger,Groceries,,-60.56
+2020-02-17,credit_card,Hobby,Misc,,-42.62
+2020-02-19,credit card,Aldi,Groceries,,-24.59
+2020-02-20,credit card,Target,Groceries,,-92.21
+2020-02-25,credit card,Kroger,Groceries,,-67.61
+2020-03-01,checking,working,Income,payroll,6666.67
+2020-03-01,checking,Apartment Rent,Shelter,Rent,-1200.0
+2020-03-01,credit card,Target,Groceries,,-44.31
+2020-03-10,credit_card,Beer,Misc,,-35.84
+2020-03-13,credit card,Target,Groceries,,-97.3
+2020-03-16,credit_card,Beer,Misc,,-36.44
+2020-03-17,credit_card,Beer,Misc,,-28.85
+2020-03-19,credit card,Aldi,Groceries,,-69.42
+2020-03-20,credit_card,Hobby,Misc,,-34.2
+2020-03-21,credit card,Target,Groceries,,-90.3
+2020-03-29,credit card,Aldi,Groceries,,-85.23
+2020-03-29,credit_card,Restaurant,Misc,,-49.14
+2020-03-31,credit card,Kroger,Groceries,,-21.03
+2020-04-01,checking,working,Income,payroll,6666.67
+2020-04-01,checking,Apartment Rent,Shelter,Rent,-1200.0
+2020-04-02,credit card,Aldi,Groceries,,-45.17
+2020-04-09,credit_card,Hobby,Misc,,-28.21
+2020-04-20,credit card,Aldi,Groceries,,-65.39
+2020-04-21,credit card,Aldi,Groceries,,-96.96
+2020-04-24,credit card,Aldi,Groceries,,-77.7
+2020-04-28,credit card,Kroger,Groceries,,-99.31
+2020-04-29,credit card,Kroger,Groceries,,-89.57
+2020-05-01,checking,working,Income,payroll,6666.67
+2020-05-01,checking,Apartment Rent,Shelter,Rent,-1200.0
+2020-05-02,credit card,Aldi,Groceries,,-97.34
+2020-05-04,credit_card,Beer,Misc,,-22.37
+2020-05-05,credit card,Target,Groceries,,-34.36
+2020-05-08,credit card,Target,Groceries,,-59.19
+2020-05-09,credit_card,Hobby,Misc,,-23.83
+2020-05-13,credit card,Kroger,Groceries,,-33.04
+2020-05-20,credit_card,Restaurant,Misc,,-43.72
+2020-05-23,credit_card,Beer,Misc,,-29.37
+2020-05-25,credit card,Kroger,Groceries,,-94.97
+2020-05-29,credit card,Target,Groceries,,-85.56
+2020-05-30,credit card,Aldi,Groceries,,-23.93
+2020-06-01,checking,working,Income,payroll,6666.67
+2020-06-01,checking,Apartment Rent,Shelter,Rent,-1200.0
+2020-06-01,credit card,Kroger,Groceries,,-33.79
+2020-06-03,credit_card,Restaurant,Misc,,-25.74
+2020-06-12,credit_card,Hobby,Misc,,-20.23
+2020-06-17,credit_card,Restaurant,Misc,,-31.0
+2020-06-26,credit card,Aldi,Groceries,,-55.26
+2020-06-28,credit_card,Beer,Misc,,-32.86
+2020-07-01,checking,working,Income,payroll,6666.67
+2020-07-01,checking,Apartment Rent,Shelter,Rent,-1200.0
+2020-07-02,credit card,Target,Groceries,,-57.87
+2020-07-07,credit card,Aldi,Groceries,,-52.49
+2020-07-07,credit_card,Beer,Misc,,-25.27
+2020-07-18,credit card,Aldi,Groceries,,-52.46
+2020-07-28,credit_card,Hobby,Misc,,-48.18
+2020-08-01,checking,working,Income,payroll,6666.67
+2020-08-01,checking,Apartment Rent,Shelter,Rent,-1200.0
+2020-08-06,credit card,Aldi,Groceries,,-20.4
+2020-08-08,credit card,Kroger,Groceries,,-92.21
+2020-08-09,credit_card,Hobby,Misc,,-20.36
+2020-08-09,credit_card,Hobby,Misc,,-23.86
+2020-08-23,credit card,Target,Groceries,,-93.99
+2020-09-01,checking,working,Income,payroll,6666.67
+2020-09-01,checking,Apartment Rent,Shelter,Rent,-1200.0
+2020-09-05,credit_card,Beer,Misc,,-47.35
+2020-09-06,credit card,Target,Groceries,,-73.91
+2020-09-13,credit card,Aldi,Groceries,,-66.06
+2020-09-14,credit card,Kroger,Groceries,,-74.94
+2020-09-17,credit_card,Restaurant,Misc,,-44.46
+2020-09-27,credit_card,Hobby,Misc,,-39.22
+2020-10-01,checking,working,Income,payroll,6666.67
+2020-10-01,checking,Apartment Rent,Shelter,Rent,-1200.0
+2020-10-03,credit_card,Hobby,Misc,,-20.78
+2020-10-11,credit card,Aldi,Groceries,,-92.46
+2020-10-12,credit_card,Restaurant,Misc,,-39.14
+2020-10-28,credit card,Kroger,Groceries,,-92.73
+2020-11-01,checking,working,Income,payroll,6666.67
+2020-11-01,checking,Apartment Rent,Shelter,Rent,-1200.0
+2020-11-05,credit_card,Restaurant,Misc,,-38.05
+2020-11-06,credit card,Kroger,Groceries,,-24.38
+2020-11-08,credit_card,Restaurant,Misc,,-48.94
+2020-11-09,credit card,Target,Groceries,,-39.44
+2020-11-23,credit_card,Restaurant,Misc,,-20.82
+2020-12-01,checking,working,Income,payroll,6666.67
+2020-12-01,checking,Apartment Rent,Shelter,Rent,-1200.0
+2020-12-02,credit card,Aldi,Groceries,,-97.45
+2020-12-08,credit card,Kroger,Groceries,,-52.46
+2020-12-18,credit card,Kroger,Groceries,,-44.55
+2020-12-19,credit_card,Beer,Misc,,-47.81
+2020-12-24,credit card,Kroger,Groceries,,-46.52
+2021-01-01,checking,working,Income,payroll,6666.67
+2021-01-01,checking,Apartment Rent,Shelter,Rent,-1200.0
+2021-01-06,credit card,Kroger,Groceries,,-74.85
+2021-01-11,credit_card,Beer,Misc,,-22.29
+2021-01-12,credit card,Kroger,Groceries,,-55.16
+2021-01-14,credit card,Aldi,Groceries,,-91.22
+2021-01-15,credit_card,Restaurant,Misc,,-27.82
+2021-01-25,credit_card,Beer,Misc,,-26.43
+2021-01-28,credit card,Target,Groceries,,-26.84
+2021-02-01,checking,working,Income,payroll,6666.67
+2021-02-01,checking,Apartment Rent,Shelter,Rent,-1200.0
+2021-02-03,credit card,Target,Groceries,,-29.86
+2021-02-04,credit card,Aldi,Groceries,,-86.43
+2021-02-05,credit_card,Hobby,Misc,,-41.26
+2021-02-07,credit card,Kroger,Groceries,,-29.83
+2021-02-13,credit card,Aldi,Groceries,,-35.11
+2021-02-16,credit card,Kroger,Groceries,,-56.2
+2021-02-22,credit card,Aldi,Groceries,,-88.34
+2021-02-24,credit card,Kroger,Groceries,,-31.75
+2021-02-25,credit_card,Restaurant,Misc,,-32.25
+2021-03-01,checking,working,Income,payroll,6666.67
+2021-03-01,checking,Apartment Rent,Shelter,Rent,-1200.0
+2021-03-05,credit card,Target,Groceries,,-39.9
+2021-03-06,credit card,Target,Groceries,,-95.87
+2021-03-08,credit card,Kroger,Groceries,,-36.52
+2021-03-12,credit card,Aldi,Groceries,,-89.25
+2021-03-26,credit card,Target,Groceries,,-65.38
+2021-03-29,credit card,Target,Groceries,,-70.25
+2021-03-29,credit_card,Restaurant,Misc,,-33.67
+2021-04-01,checking,working,Income,payroll,6666.67
+2021-04-01,checking,New Apartment Rent,Shelter,Rent,-1700.0
+2021-04-11,credit card,Aldi,Groceries,,-66.29
+2021-04-11,credit_card,Hobby,Misc,,-47.23
+2021-04-13,credit card,Kroger,Groceries,,-76.01
+2021-04-15,credit card,Target,Groceries,,-46.61
+2021-04-17,credit_card,Beer,Misc,,-29.16
+2021-04-19,credit card,Target,Groceries,,-85.08
+2021-04-20,credit card,Target,Groceries,,-40.98
+2021-05-01,checking,working,Income,payroll,6666.67
+2021-05-01,checking,New Apartment Rent,Shelter,Rent,-1700.0
+2021-05-06,credit card,Aldi,Groceries,,-76.76
+2021-05-20,credit_card,Restaurant,Misc,,-28.29
+2021-05-26,credit card,Aldi,Groceries,,-73.21
+2021-06-01,checking,working,Income,payroll,6666.67
+2021-06-01,checking,New Apartment Rent,Shelter,Rent,-1700.0
+2021-06-06,credit card,Kroger,Groceries,,-39.5
+2021-06-07,credit card,Aldi,Groceries,,-60.72
+2021-06-10,credit card,Target,Groceries,,-38.65
+2021-06-12,credit_card,Hobby,Misc,,-32.4
+2021-06-13,credit card,Kroger,Groceries,,-45.6
+2021-06-14,credit card,Target,Groceries,,-25.0
+2021-06-24,credit card,Kroger,Groceries,,-33.06
+2021-07-01,checking,working,Income,payroll,6666.67
+2021-07-01,checking,New Apartment Rent,Shelter,Rent,-1700.0
+2021-07-02,credit card,Kroger,Groceries,,-20.08
+2021-07-12,credit card,Target,Groceries,,-50.61
+2021-07-19,credit card,Target,Groceries,,-66.47
+2021-07-22,credit card,Kroger,Groceries,,-45.24
+2021-08-01,checking,working,Income,payroll,6666.67
+2021-08-01,checking,New Apartment Rent,Shelter,Rent,-1700.0
+2021-08-07,credit_card,Restaurant,Misc,,-26.55
+2021-08-12,credit card,Target,Groceries,,-74.28
+2021-08-15,credit card,Kroger,Groceries,,-75.26
+2021-08-27,credit card,Kroger,Groceries,,-41.84
+2021-08-29,credit card,Kroger,Groceries,,-55.65
+2021-08-30,credit card,Kroger,Groceries,,-47.35
+2021-08-31,credit card,Aldi,Groceries,,-86.16
+2021-09-01,checking,working,Income,payroll,6666.67
+2021-09-01,checking,New Apartment Rent,Shelter,Rent,-1700.0
+2021-09-05,credit_card,Restaurant,Misc,,-43.27
+2021-09-06,credit card,Target,Groceries,,-52.2
+2021-09-08,credit_card,Hobby,Misc,,-27.08
+2021-09-11,credit card,Aldi,Groceries,,-66.53
+2021-09-27,credit card,Target,Groceries,,-52.93
+2021-10-01,checking,working,Income,payroll,6666.67
+2021-10-01,checking,New Apartment Rent,Shelter,Rent,-1700.0
+2021-10-01,credit card,Aldi,Groceries,,-27.24
+2021-10-05,credit card,Target,Groceries,,-33.41
+2021-10-07,credit card,Kroger,Groceries,,-72.82
+2021-10-08,credit_card,Hobby,Misc,,-37.38
+2021-10-10,credit_card,Beer,Misc,,-26.47
+2021-10-17,credit card,Kroger,Groceries,,-41.5
+2021-10-19,credit card,Aldi,Groceries,,-49.86
+2021-10-19,credit card,Target,Groceries,,-93.12
+2021-11-01,checking,working,Income,payroll,6666.67
+2021-11-01,checking,New Apartment Rent,Shelter,Rent,-1700.0
+2021-11-04,credit card,Aldi,Groceries,,-55.23
+2021-11-05,credit card,Aldi,Groceries,,-36.0
+2021-11-05,credit card,Aldi,Groceries,,-32.44
+2021-11-07,credit card,Kroger,Groceries,,-96.58
+2021-11-13,credit card,Aldi,Groceries,,-70.33
+2021-11-16,credit_card,Hobby,Misc,,-47.84
+2021-12-01,checking,working,Income,payroll,6666.67
+2021-12-01,checking,New Apartment Rent,Shelter,Rent,-1700.0
+2021-12-02,credit_card,Restaurant,Misc,,-49.3
+2021-12-05,credit_card,Restaurant,Misc,,-21.82
+2021-12-11,credit_card,Restaurant,Misc,,-33.93
+2021-12-12,credit card,Kroger,Groceries,,-44.73
+2021-12-17,credit card,Kroger,Groceries,,-33.54
+2021-12-21,credit_card,Restaurant,Misc,,-45.66
+2021-12-26,credit card,Aldi,Groceries,,-22.19
+2022-01-01,checking,working,Income,payroll,6666.67
+2022-01-01,checking,house,Shelter,Mortgage,-3000.0
+2022-01-01,credit card,Target,Groceries,,-44.95
+2022-01-04,credit_card,Hobby,Misc,,-30.13
+2022-01-07,credit card,Target,Groceries,,-37.84
+2022-01-08,credit card,Aldi,Groceries,,-23.69
+2022-01-18,credit_card,Restaurant,Misc,,-27.59
+2022-01-21,credit_card,Hobby,Misc,,-41.97
+2022-01-23,credit card,Kroger,Groceries,,-38.53
+2022-01-27,credit card,Kroger,Groceries,,-95.5
+2022-01-30,credit card,Target,Groceries,,-53.67
+2022-01-30,credit_card,Beer,Misc,,-30.59
+2022-02-01,checking,working,Income,payroll,6666.67
+2022-02-01,checking,house,Shelter,Mortgage,-3000.0
+2022-02-05,credit_card,Beer,Misc,,-41.48
+2022-02-13,credit card,Kroger,Groceries,,-76.42
+2022-02-17,credit card,Kroger,Groceries,,-58.16
+2022-02-26,credit card,Target,Groceries,,-47.46
+2022-03-01,checking,working,Income,payroll,6666.67
+2022-03-01,checking,house,Shelter,Mortgage,-3000.0
+2022-03-01,credit card,Target,Groceries,,-70.66
+2022-03-13,credit card,Kroger,Groceries,,-83.03
+2022-03-16,credit card,Aldi,Groceries,,-70.23
+2022-03-17,credit card,Aldi,Groceries,,-34.68
+2022-03-17,credit card,Aldi,Groceries,,-47.28
+2022-03-22,credit card,Aldi,Groceries,,-70.59
+2022-03-24,credit_card,Beer,Misc,,-46.1
+2022-03-26,credit card,Target,Groceries,,-76.03
+2022-03-30,credit_card,Restaurant,Misc,,-26.15
+2022-04-01,checking,working,Income,payroll,6666.67
+2022-04-01,checking,house,Shelter,Mortgage,-3000.0
+2022-04-05,credit_card,Restaurant,Misc,,-44.57
+2022-04-08,credit_card,Hobby,Misc,,-35.4
+2022-04-10,credit card,Aldi,Groceries,,-48.56
+2022-04-12,credit card,Kroger,Groceries,,-69.96
+2022-04-16,credit card,Kroger,Groceries,,-93.97
+2022-04-16,credit card,Kroger,Groceries,,-69.56
+2022-04-16,credit_card,Restaurant,Misc,,-24.42
+2022-04-17,credit_card,Restaurant,Misc,,-33.62
+2022-04-24,credit_card,Hobby,Misc,,-35.43
+2022-04-27,credit card,Target,Groceries,,-50.46
+2022-05-01,checking,working,Income,payroll,6666.67
+2022-05-01,checking,house,Shelter,Mortgage,-3000.0
+2022-05-05,credit card,Target,Groceries,,-76.99
+2022-05-08,credit card,Target,Groceries,,-50.5
+2022-05-08,credit_card,Beer,Misc,,-20.81
+2022-05-11,credit_card,Beer,Misc,,-33.26
+2022-05-11,credit_card,Hobby,Misc,,-32.34
+2022-05-13,credit_card,Beer,Misc,,-28.01
+2022-05-20,credit card,Target,Groceries,,-29.96
+2022-05-24,credit card,Target,Groceries,,-95.53
+2022-05-26,credit_card,Hobby,Misc,,-41.25
+2022-05-29,credit card,Target,Groceries,,-61.71
+2022-06-01,checking,working,Income,payroll,6666.67
+2022-06-01,checking,house,Shelter,Mortgage,-3000.0
+2022-06-06,credit card,Kroger,Groceries,,-21.32
+2022-06-07,credit_card,Hobby,Misc,,-28.21
+2022-06-11,credit_card,Restaurant,Misc,,-33.16
+2022-06-16,credit card,Aldi,Groceries,,-27.69
+2022-06-16,credit_card,Beer,Misc,,-46.06
+2022-06-25,credit card,Kroger,Groceries,,-77.18
+2022-06-27,credit_card,Beer,Misc,,-37.18
+2022-06-28,credit card,Kroger,Groceries,,-22.19
+2022-07-01,checking,working,Income,payroll,6666.67
+2022-07-01,checking,house,Shelter,Mortgage,-3000.0
+2022-07-02,credit_card,Hobby,Misc,,-37.13
+2022-07-09,credit card,Kroger,Groceries,,-31.29
+2022-07-12,credit card,Kroger,Groceries,,-60.83
+2022-07-20,credit card,Aldi,Groceries,,-64.64
+2022-07-21,credit card,Kroger,Groceries,,-60.59
+2022-07-23,credit card,Aldi,Groceries,,-72.28
+2022-08-01,checking,working,Income,payroll,6666.67
+2022-08-01,checking,house,Shelter,Mortgage,-3000.0
+2022-08-02,credit_card,Beer,Misc,,-47.52
+2022-08-06,credit card,Target,Groceries,,-81.84
+2022-08-12,credit card,Kroger,Groceries,,-29.9
+2022-08-16,credit card,Aldi,Groceries,,-82.44
+2022-08-17,credit card,Kroger,Groceries,,-88.84
+2022-08-25,credit card,Target,Groceries,,-43.5
+2022-08-25,credit_card,Beer,Misc,,-41.52
+2022-08-25,credit_card,Hobby,Misc,,-37.89
+2022-09-01,checking,working,Income,payroll,6666.67
+2022-09-01,checking,house,Shelter,Mortgage,-3000.0
+2022-09-04,credit card,Target,Groceries,,-71.16
+2022-09-06,credit card,Aldi,Groceries,,-75.24
+2022-09-14,credit card,Aldi,Groceries,,-40.97
+2022-09-23,credit card,Kroger,Groceries,,-25.46
+2022-09-26,credit card,Kroger,Groceries,,-67.81
+2022-09-28,credit card,Target,Groceries,,-97.49
+2022-10-01,checking,working,Income,payroll,6666.67
+2022-10-01,checking,house,Shelter,Mortgage,-3000.0
+2022-10-03,credit_card,Hobby,Misc,,-37.45
+2022-10-05,credit card,Target,Groceries,,-24.78
+2022-10-11,credit card,Aldi,Groceries,,-60.72
+2022-10-12,credit_card,Hobby,Misc,,-41.62
+2022-10-14,credit card,Target,Groceries,,-21.73
+2022-10-17,credit_card,Hobby,Misc,,-36.18
+2022-10-25,credit card,Kroger,Groceries,,-78.62
+2022-10-28,credit_card,Restaurant,Misc,,-40.56
+2022-10-28,credit_card,Beer,Misc,,-37.62
+2022-11-01,checking,working,Income,payroll,6666.67
+2022-11-01,checking,house,Shelter,Mortgage,-3000.0
+2022-11-01,credit card,Aldi,Groceries,,-78.49
+2022-11-06,credit card,Kroger,Groceries,,-58.89
+2022-11-09,credit card,Kroger,Groceries,,-91.14
+2022-11-15,credit card,Kroger,Groceries,,-78.13
+2022-11-16,credit card,Kroger,Groceries,,-68.12
+2022-11-20,credit card,Aldi,Groceries,,-66.47
+2022-11-22,credit card,Aldi,Groceries,,-66.19
+2022-12-01,checking,working,Income,payroll,6666.67
+2022-12-01,checking,house,Shelter,Mortgage,-3000.0
+2022-12-08,credit card,Target,Groceries,,-88.32
+2022-12-12,credit card,Kroger,Groceries,,-63.77
+2022-12-30,credit card,Aldi,Groceries,,-58.09
+2023-01-01,checking,working,Income,payroll,6666.67
+2023-01-01,checking,house,Shelter,Mortgage,-3000.0
+2023-01-02,credit card,Kroger,Groceries,,-30.02
+2023-01-04,credit card,Kroger,Groceries,,-53.99
+2023-01-07,credit card,Target,Groceries,,-59.25
+2023-01-16,credit_card,Hobby,Misc,,-20.08
+2023-01-17,credit card,Kroger,Groceries,,-69.0
+2023-01-24,credit_card,Hobby,Misc,,-36.04
+2023-01-27,credit_card,Restaurant,Misc,,-36.4
+2023-02-01,checking,working,Income,payroll,6666.67
+2023-02-01,checking,house,Shelter,Mortgage,-3000.0
+2023-02-15,credit card,Aldi,Groceries,,-73.11
+2023-02-16,credit card,Kroger,Groceries,,-77.29
+2023-02-19,credit card,Kroger,Groceries,,-70.89
+2023-02-22,credit card,Kroger,Groceries,,-30.72
+2023-02-25,credit card,Target,Groceries,,-52.87
+2023-03-01,checking,working,Income,payroll,6666.67
+2023-03-01,checking,house,Shelter,Mortgage,-3000.0
+2023-03-01,credit card,Aldi,Groceries,,-63.12
+2023-03-07,credit_card,Restaurant,Misc,,-41.01
+2023-03-08,credit card,Target,Groceries,,-73.18
+2023-03-10,credit_card,Hobby,Misc,,-30.6
+2023-03-13,credit card,Kroger,Groceries,,-70.27
+2023-03-17,credit card,Target,Groceries,,-55.82
+2023-03-25,credit card,Kroger,Groceries,,-82.03
+2023-03-27,credit card,Aldi,Groceries,,-96.06
+2023-03-27,credit_card,Hobby,Misc,,-42.58
+2023-04-01,checking,working,Income,payroll,6666.67
+2023-04-01,checking,house,Shelter,Mortgage,-3000.0
+2023-04-07,credit_card,Beer,Misc,,-31.18
+2023-04-07,credit_card,Beer,Misc,,-23.25
+2023-04-16,credit_card,Beer,Misc,,-34.78
+2023-04-16,credit_card,Hobby,Misc,,-25.45
+2023-04-18,credit card,Target,Groceries,,-52.81
+2023-04-24,credit card,Aldi,Groceries,,-74.52
+2023-04-26,credit card,Aldi,Groceries,,-99.28
+2023-04-28,credit card,Target,Groceries,,-24.06
+2023-04-28,credit_card,Restaurant,Misc,,-31.76
+2023-05-01,checking,working,Income,payroll,6666.67
+2023-05-01,checking,house,Shelter,Mortgage,-3000.0
+2023-05-01,credit card,Aldi,Groceries,,-41.78
+2023-05-03,credit card,Aldi,Groceries,,-35.36
+2023-05-03,credit_card,Hobby,Misc,,-41.6
+2023-05-04,credit_card,Hobby,Misc,,-34.09
+2023-05-04,credit_card,Hobby,Misc,,-38.24
+2023-05-04,credit_card,Beer,Misc,,-43.07
+2023-05-15,credit card,Kroger,Groceries,,-85.88
+2023-05-17,credit card,Aldi,Groceries,,-24.13
+2023-05-18,credit_card,Beer,Misc,,-43.74
+2023-05-22,credit card,Aldi,Groceries,,-82.07
+2023-06-01,checking,working,Income,payroll,6666.67
+2023-06-01,checking,house,Shelter,Mortgage,-3000.0
+2023-06-06,credit card,Kroger,Groceries,,-96.95
+2023-06-14,credit card,Kroger,Groceries,,-37.29
+2023-06-15,credit_card,Restaurant,Misc,,-33.91
+2023-06-16,credit card,Target,Groceries,,-80.12
+2023-06-24,credit card,Kroger,Groceries,,-20.88
+2023-06-25,credit card,Aldi,Groceries,,-70.13
+2023-06-26,credit card,Kroger,Groceries,,-42.12
+2023-06-27,credit card,Aldi,Groceries,,-39.3
+2023-06-29,credit card,Aldi,Groceries,,-40.03
+2023-07-01,checking,working,Income,payroll,6666.67
+2023-07-01,checking,house,Shelter,Mortgage,-3000.0
+2023-07-01,credit card,Kroger,Groceries,,-59.82
+2023-07-01,credit card,Aldi,Groceries,,-96.14
+2023-07-02,credit_card,Hobby,Misc,,-43.45
+2023-07-15,credit_card,Restaurant,Misc,,-34.3
+2023-07-27,credit_card,Beer,Misc,,-27.81
+2023-08-01,checking,working,Income,payroll,6666.67
+2023-08-01,checking,house,Shelter,Mortgage,-3000.0
+2023-08-13,credit card,Aldi,Groceries,,-95.71
+2023-08-17,credit_card,Beer,Misc,,-33.05
+2023-08-22,credit card,Aldi,Groceries,,-90.61
+2023-08-24,credit_card,Hobby,Misc,,-42.81
+2023-09-01,checking,working,Income,payroll,6666.67
+2023-09-01,checking,house,Shelter,Mortgage,-3000.0
+2023-09-04,credit card,Target,Groceries,,-43.46
+2023-09-06,credit_card,Restaurant,Misc,,-33.55
+2023-09-09,credit card,Aldi,Groceries,,-20.54
+2023-09-10,credit card,Target,Groceries,,-43.2
+2023-09-11,credit card,Aldi,Groceries,,-26.68
+2023-09-17,credit card,Target,Groceries,,-23.71
+2023-09-17,credit_card,Hobby,Misc,,-41.97
+2023-09-19,credit card,Aldi,Groceries,,-97.34
+2023-09-24,credit card,Aldi,Groceries,,-60.11
+2023-10-01,checking,working,Income,payroll,6666.67
+2023-10-01,checking,house,Shelter,Mortgage,-3000.0
+2023-10-02,credit_card,Restaurant,Misc,,-25.03
+2023-10-04,credit_card,Hobby,Misc,,-45.84
+2023-10-07,credit card,Kroger,Groceries,,-58.48
+2023-10-08,credit_card,Hobby,Misc,,-45.26
+2023-10-13,credit card,Aldi,Groceries,,-60.86
+2023-10-20,credit_card,Beer,Misc,,-43.4
+2023-10-22,credit card,Target,Groceries,,-91.71
+2023-10-30,credit_card,Restaurant,Misc,,-37.08
+2023-11-01,checking,working,Income,payroll,6666.67
+2023-11-01,checking,house,Shelter,Mortgage,-3000.0
+2023-11-07,credit card,Kroger,Groceries,,-31.16
+2023-11-15,credit card,Kroger,Groceries,,-35.54
+2023-11-17,credit card,Aldi,Groceries,,-40.89
+2023-12-01,checking,working,Income,payroll,6666.67
+2023-12-01,checking,house,Shelter,Mortgage,-3000.0
+2023-12-05,credit card,Aldi,Groceries,,-24.64
+2023-12-08,credit card,Aldi,Groceries,,-64.72
+2023-12-11,credit_card,Hobby,Misc,,-39.56
+2023-12-17,credit card,Kroger,Groceries,,-77.76
+2023-12-25,credit card,Aldi,Groceries,,-22.66
